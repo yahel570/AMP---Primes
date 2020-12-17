@@ -17,7 +17,11 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					{image : 'AH05.jpg'}, 
 					{image : 'AH06.jpg'}, 
 					{image : 'AH07.jpg'}, 
-					{image : 'AH08.jpg'}]
+					{image : 'AH08.jpg'}, 
+					{image : 'AH09.jpg'}, 
+					{image : 'AH10.jpg'}, 
+					{image : 'AH11.jpg'}, 
+					{image : 'AH12.jpg'}]
 
 			}, 
 			{
@@ -31,8 +35,12 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					{image : 'AF04.jpg'}, 
 					{image : 'AF05.jpg'}, 
 					{image : 'AF06.jpg'}, 
-					{image : 'AF07.jpg'}, 
-					{image : 'AF08.jpg'}]
+					{image : 'AF07.jpg'},
+					{image : 'AF08.jpg'}, 
+					{image : 'AF09.jpg'}, 
+					{image : 'AF10.jpg'}, 
+					{image : 'AF12.jpg'}, 
+					{image : 'AF11.jpg'}]
 			} 
 		],
 
