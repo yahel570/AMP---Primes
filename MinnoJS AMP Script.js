@@ -6,42 +6,64 @@ define(['pipAPI', 'https://github.com/yahel570/AMP---Primes/blob/main/MinnoJS%20
 	return ampExtension({
 		primeCats :  [
 			{
-				nameForFeedback : 'Black people',  //Will be used in the user feedback 
-				nameForLogging : 'Black people', //Will be used in the logging
+				nameForFeedback : 'Affiliation Approach',  //Will be used in the user feedback 
+				nameForLogging : 'Affiliation Approach', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'b01.jpg'}, 
-					{image : 'b02.jpg'}, 
-					{image : 'b03.jpg'}, 
-					{image : 'b04.jpg'}, 
-					{image : 'b05.jpg'}, 
-					{image : 'b06.jpg'}, 
-					{image : 'b07.jpg'}, 
-					{image : 'b08.jpg'}, 
-					{image : 'b09.jpg'}, 
-					{image : 'b10.jpg'}, 
-					{image : 'b11.jpg'}, 
-					{image : 'b12.jpg'}]
+				    {image : 'AH01.jpg'}, 
+					{image : 'AH02.jpg'}, 
+					{image : 'AH03.jpg'}, 
+					{image : 'AH04.jpg'}, 
+					{image : 'AH05.jpg'}, 
+					{image : 'AH06.jpg'}, 
+					{image : 'AH07.jpg'}, 
+					{image : 'AH08.jpg'}]
 
 			}, 
 			{
-				nameForFeedback : 'White people',  //Will be used in the user feedback 
-				nameForLogging : 'White people', //Will be used in the logging
+				nameForFeedback : 'Affiliation Avoidance',  //Will be used in the user feedback 
+				nameForLogging : 'Affiliation Avoidance', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'w01.jpg'}, 
-					{image : 'w02.jpg'}, 
-					{image : 'w03.jpg'}, 
-					{image : 'w04.jpg'}, 
-					{image : 'w05.jpg'}, 
-					{image : 'w06.jpg'}, 
-					{image : 'w07.jpg'}, 
-					{image : 'w08.jpg'}, 
-					{image : 'w09.jpg'}, 
-					{image : 'w10.jpg'}, 
-					{image : 'w11.jpg'}, 
-					{image : 'w12.jpg'}]
-			}
+				    {image : 'AF01.jpg'}, 
+					{image : 'AF02.jpg'}, 
+					{image : 'AF03.jpg'}, 
+					{image : 'AF04.jpg'}, 
+					{image : 'AF05.jpg'}, 
+					{image : 'AF06.jpg'}, 
+					{image : 'AF07.jpg'}, 
+					{image : 'AF08.jpg'}]
+			},
+			{
+				nameForFeedback : 'Power Approach',  //Will be used in the user feedback 
+				nameForLogging : 'Power Approach', //Will be used in the logging
+				//An array of all media objects for this category.
+				mediaArray : [
+				    {image : 'PH01.jpg'}, 
+					{image : 'PH02.jpg'}, 
+					{image : 'PH03.jpg'}, 
+					{image : 'PH04.jpg'}, 
+					{image : 'PH05.jpg'}, 
+					{image : 'PH06.jpg'}, 
+					{image : 'PH07.jpg'}, 
+					{image : 'PH08.jpg'}]
+
+			}, 
+			{
+				nameForFeedback : 'Power Avoidance',  //Will be used in the user feedback 
+				nameForLogging : 'Power Avoidance', //Will be used in the logging
+				//An array of all media objects for this category.
+				mediaArray : [
+				    {image : 'PF01.jpg'}, 
+					{image : 'PF02.jpg'}, 
+					{image : 'PF03.jpg'}, 
+					{image : 'PF04.jpg'}, 
+					{image : 'PF05.jpg'}, 
+					{image : 'PF06.jpg'}, 
+					{image : 'PF07.jpg'}, 
+					{image : 'PF08.jpg'}]
+
+			}, 
 		],
 
 		examplePrimeStimulus : 
@@ -52,7 +74,7 @@ define(['pipAPI', 'https://github.com/yahel570/AMP---Primes/blob/main/MinnoJS%20
 		},
 
 		base_url : {//Where are your images at?
-			image : 'https://baranan.github.io/minno-tasks/images/ampImages'
+			image : 'https://github.com/yahel570/AMP---Primes/blob/main/'
 		}
 	});
 });
