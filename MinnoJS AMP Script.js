@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://https://yahel570.github.io/AMP---Primes/MinnoJS%20AMP%20Script.js'], function(APIConstructor, ampExtension){
+define(['pipAPI', 'https://yahel570.github.io/AMP---Primes/MinnoJS%20AMP%20Script.js'], function(APIConstructor, ampExtension){
 
 	var API = new APIConstructor();
 	
