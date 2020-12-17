@@ -33,37 +33,7 @@ define(['pipAPI', 'https://yahel570.github.io/AMP---Primes/MinnoJS%20AMP%20Scrip
 					{image : 'AF06.jpg'}, 
 					{image : 'AF07.jpg'}, 
 					{image : 'AF08.jpg'}]
-			},
-			{
-				nameForFeedback : 'Power Approach',  //Will be used in the user feedback 
-				nameForLogging : 'Power Approach', //Will be used in the logging
-				//An array of all media objects for this category.
-				mediaArray : [
-				    {image : 'PH01.jpg'}, 
-					{image : 'PH02.jpg'}, 
-					{image : 'PH03.jpg'}, 
-					{image : 'PH04.jpg'}, 
-					{image : 'PH05.jpg'}, 
-					{image : 'PH06.jpg'}, 
-					{image : 'PH07.jpg'}, 
-					{image : 'PH08.jpg'}]
-
-			}, 
-			{
-				nameForFeedback : 'Power Avoidance',  //Will be used in the user feedback 
-				nameForLogging : 'Power Avoidance', //Will be used in the logging
-				//An array of all media objects for this category.
-				mediaArray : [
-				    {image : 'PF01.jpg'}, 
-					{image : 'PF02.jpg'}, 
-					{image : 'PF03.jpg'}, 
-					{image : 'PF04.jpg'}, 
-					{image : 'PF05.jpg'}, 
-					{image : 'PF06.jpg'}, 
-					{image : 'PF07.jpg'}, 
-					{image : 'PF08.jpg'}]
-
-			}, 
+			} 
 		],
 
 		examplePrimeStimulus : 
