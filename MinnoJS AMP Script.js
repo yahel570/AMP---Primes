@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://github.com/yahel570/AMP---Primes/blob/main/MinnoJS%20AMP%20Script.js'], function(APIConstructor, ampExtension){
+define(['pipAPI', 'https://https://yahel570.github.io/AMP---Primes/MinnoJS%20AMP%20Script.js'], function(APIConstructor, ampExtension){
 
 	var API = new APIConstructor();
 	
@@ -74,7 +74,7 @@ define(['pipAPI', 'https://github.com/yahel570/AMP---Primes/blob/main/MinnoJS%20
 		},
 
 		base_url : {//Where are your images at?
-			image : 'https://github.com/yahel570/AMP---Primes/blob/main/'
+			image : 'https://yahel570.github.io/AMP---Primes/'
 		}
 	});
 });
