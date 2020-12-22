@@ -37,6 +37,17 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					nameForLogging : 'Affiliation Approach', //Will be used in the logging
 					//An array of all media objects for this category.
           mediaArray : [{image : 'AH01.jpg'}, {image : 'AH02.jpg'}, {image : 'AH03.jpg'}, {image : 'AH04.jpg'}, {image : 'AH05.jpg'}, {image : 'AH06.jpg'}, {image : 'AH07.jpg'}, {image : 'AH08.jpg'}]
+				}, 				{
+					nameForFeedback : 'Power Approach',  //Will be used in the user feedback 
+					nameForLogging : 'Power Approach', //Will be used in the logging
+					//An array of all media objects for this category.
+          mediaArray : [{image : 'PH01.jpg'}, {image : 'PH02.jpg'}, {image : 'PH03.jpg'}, {image : 'PH04.jpg'}, {image : 'PH05.jpg'}, {image : 'PH06.jpg'}, {image : 'PH07.jpg'}, {image : 'PH08.jpg'}]
+				}, 
+				{
+					nameForFeedback : 'Power Avoidance',  //Will be used in the user feedback 
+					nameForLogging : 'Power Avoidance', //Will be used in the logging
+					//An array of all media objects for this category.
+          mediaArray : [{image : 'PF01.jpg'}, {image : 'PF02.jpg'}, {image : 'PF03.jpg'}, {image : 'PF04.jpg'}, {image : 'PF05.jpg'}, {image : 'PF06.jpg'}, {image : 'PF07.jpg'}, {image : 'PF08.jpg'}]
 				}, 
 				{
 					nameForFeedback : 'Affiliation Avoidance',  //Will be used in the user feedback 
@@ -123,7 +134,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			fixationDuration : -1, //It means that by default we do not use fixation.
 			primeDuration : 150, 
 			postPrimeDuration : 100, //Duration of blank screen between prime and target.
-			targetDuration : 100, //Duration of target presentation.
+			targetDuration : 200, //Duration of target presentation.
 			showRatingDuration : 300, //In the 7-responses option, for how long to show the selected rating.
 			ITI : 250, //Duration between trials.
 			
@@ -139,46 +150,46 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlock_targetDuration : 300, 
 			
 			//Instructions text for the 2-responses version.
-			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'בשלב הזה, נציג בפנייך מספר אותיות יפניות. אנא דרג.י בצורה כנה את התחושה שאותיות אלה מעוררות בך' + 
-      'לחץ.י על המקש <B>rightKey</B> במידה והאות היפנית מייצרת תחושה חיובית או נעימה מהממוצע ' + 
-			'לחץ.י על המקש <b>leftKey</b> במידה והאות היפנית מייצרת תחושה שלילית או לא נעימה.<br/><br/>' + 
-			'שים.י לב, התמונות יעלמו מהר לכן, אנא היה מרוכז.ת וקשוב.ה והגב.י במהירות' + 
-			'אנא נסה.י להימנע במידת האפשר מהשפעה של תמונות שאינן האותיות היפניות.' + 
-      'במקום, נסה.י לדרג בצורה אותנטית ואינטואיטיבית עד כמה נעימה או לא נעימה תחושת הבטן המתעוררת בך בתגובה לאותיות היפניות.<br/><br/></p>'  + 
+			exampleBlockInst: '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial"><color="000000"><br/>' + 
+			'בשלב הזה, נציג בפנייך מספר אותיות יפניות. אנא דרג/י בצורה כנה את התחושה שאותיות אלה מעוררות בך. ' + 
+      			'לחץ/י על המקש <B>rightKey</B> .במידה והאות היפנית מייצרת תחושה חיובית או נעימה מהממוצע ' + 
+			'לחץ/י על המקש <b>leftKey</b> במידה והאות היפנית מייצרת תחושה שלילית או לא נעימה.<br/><br/>' + 
+			'שים/י לב, התמונות יעלמו מהר לכן, אנא היה מרוכז/ת וקשוב/ה, והגב/י במהירות. ' + 
+			'אנא נסה/י להימנע במידת האפשר מהשפעה של תמונות שאינן האותיות היפניות. ' + 
+     			'במקום, נסה/י לדרג בצורה אותנטית ואינטואיטיבית עד כמה נעימה או לא נעימה תחושת הבטן המתעוררת בך בתגובה לאותיות היפניות.<br/><br/></p>'  + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 1 of nBlocks]</p></div>',
-			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			"רואה כמה מהר זה היה? לא נורא אם פספסת כמה" + 
-			'לך.י עם תחושת הבטן שלך <br/><br/>' + 
-			'התרכז.י באות היפנית ודרג.י אותה כיותר נעימה מהממוצע עם המקש <b>rightKey</b>, ' + 
+			firstBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial"><color="000000"><br/>' + 
+			"רואה כמה מהר זה היה? לא נורא אם פספסת כמה. " + 
+			'לך/י עם תחושת הבטן שלך <br/><br/>' + 
+			'התרכז/י באות היפנית ודרג/י אותה כיותר נעימה מהממוצע עם המקש <b>rightKey</b>, ' + 
 			'או כפחות נעימה מהממוצע עם המקש  <b>leftKey</b><br/><br/>' + 
-			'התמקד.י באות היפנית והתעלם.י מהתמונה שמופיעה לפניה' + 
+			'התמקד/י באות היפנית והתעלם.י מהתמונה שמופיעה לפניה' + 
 			'הפריטים האלה נוטים להיות מסיחים לפעמים.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round 2 of nBlocks]</p></div>',
-			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'מצוין! בוא.י נעשה עוד סיבוב כזה. ' + 
+			middleBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial"><color="000000"><br/>' + 
+			'מצוין! בוא/י נעשה עוד סיבוב כזה. ' + 
 			'החוקים נשארו בדיוק אותו הדבר:<br/><br/>' + 
-			'התרכז באות היפנית, אם אתה חושב שהיא נעימה מהממוצע לחץ על המקש <b>rightKey</b>, ' + 
-			'ואם היא פחות נעימה מהממוצע לחץ על המקש <b>leftKey</b>.<br/><br/>' + 
-			'דרג כל אות והימנע מהשפעה של התמונה שמופיעה לפניה' + 
-			'פשוט נסה.י לדרג בצורה אותנטית ואינטואיטיבית עד כמה נעימה או לא נעימה תחושת הבטן המתעוררת בך בתגובה לאותיות היפניות.<br/><br/>' + 
+			'התרכז/י באות היפנית, אם את/ה מרגיש/ה שהיא נעימה מהממוצע לחץ/י על המקש <b>rightKey</b>, ' + 
+			'ואם היא פחות נעימה מהממוצע לחץ/י על המקש <b>leftKey</b>.<br/><br/>' + 
+			'דרג/י כל אות והימנע/י מהשפעה של התמונה שמופיעה לפניה, ' + 
+			'פשוט נסה/י לדרג בצורה אותנטית ואינטואיטיבית עד כמה נעימה או לא נעימה תחושת הבטן המתעוררת בך בתגובה לאותיות היפניות.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
-			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
-			'מוכן.ה לסיבוב האחרון? ' + 
+			lastBlockInst : '<div><p style="font-size:20px; text-align:right; margin-right:10px; font-family:arial"><color="000000"><br/>' + 
+			'מוכן/ה לסיבוב האחרון? ' + 
 			'החוקים נשארו בדיוק אותו הדבר:<br/><br/>' + 
-			'התרכז באות היפנית, אם אתה חושב שהיא נעימה מהממוצע לחץ על המקש <b>rightKey</b>, ' + 
-			'ואם היא פחות נעימה מהממוצע לחץ על המקש <b>leftKey</b>.<br/><br/>' + 
-			'דרג כל אות והימנע מהשפעה של התמונה שמופיעה לפניה' + 
-			'פשוט נסה.י לדרג בצורה אותנטית ואינטואיטיבית עד כמה נעימה או לא נעימה תחושת הבטן המתעוררת בך בתגובה לאותיות היפניות.<br/><br/>' +
+			'התרכז/י באות היפנית, אם את/ה מרגיש/ה שהיא נעימה מהממוצע לחץ/י על המקש <b>rightKey</b>, ' + 
+			'ואם היא פחות נעימה מהממוצע לחץ/י על המקש <b>leftKey</b>.<br/><br/>' + 
+			'דרג/י כל אות והימנע/י מהשפעה של התמונה שמופיעה לפניה, ' + 
+			'פשוט נסה/י לדרג בצורה אותנטית ואינטואיטיבית עד כמה נעימה או לא נעימה תחושת הבטן המתעוררת בך בתגובה לאותיות היפניות.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
