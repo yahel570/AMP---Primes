@@ -166,8 +166,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'לך/י עם תחושת הבטן שלך <br/><br/>' + 
 			'התרכז/י באות היפנית ודרג/י אותה כיותר נעימה מהממוצע עם המקש <b>rightKey</b>, ' + 
 			'או כפחות נעימה מהממוצע עם המקש  <b>leftKey</b><br/><br/>' + 
-			'התמקד/י באות היפנית והתעלם.י מהתמונה שמופיעה לפניה' + 
-			'הפריטים האלה נוטים להיות מסיחים לפעמים.<br/><br/>' + 
+			'התמקד/י באות היפנית והתעלם.י מהתמונה שמופיעה לפניה. ' + 
+			'!הפריטים האלה נוטים להיות מסיחים לפעמים.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="000000"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
